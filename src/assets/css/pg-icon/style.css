@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'wp-photo-gallery';
+  src:  url('fonts/wp-photo-gallery.eot?inveyw');
+  src:  url('fonts/wp-photo-gallery.eot?inveyw#iefix') format('embedded-opentype'),
+    url('fonts/wp-photo-gallery.ttf?inveyw') format('truetype'),
+    url('fonts/wp-photo-gallery.woff?inveyw') format('woff'),
+    url('fonts/wp-photo-gallery.svg?inveyw#wp-photo-gallery') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.pgicon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'wp-photo-gallery' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pg-download:before {
+  content: "\e900";
+}
+.pg-like:before {
+  content: "\e901";
+}
+.pg-search:before {
+  content: "\e902";
+}
+.pg-upload:before {
+  content: "\e903";
+}

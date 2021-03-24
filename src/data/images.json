@@ -1,0 +1,66 @@
+[
+	{
+		"title": "Image 1",
+		"url": "./img/3078b529-ba98-4f72-80e7-b31ab4aa6c29.jfif",
+		"favorite": 5,
+		"downloads": 20,
+		"alt": "Alt 1",
+		"categories": ["Music", "Book", "Article"]
+	},
+	{
+		"title": "Image 1",
+		"url": "./img/3078b529-ba98-4f72-80e7-b31ab4aa6c29.jfif",
+		"favorite": 5,
+		"downloads": 20,
+		"alt": "Alt 1",
+		"categories": ["Music", "Book", "Article"]
+	},
+	{
+		"title": "Image 1",
+		"url": "./img/3078b529-ba98-4f72-80e7-b31ab4aa6c29.jfif",
+		"favorite": 5,
+		"downloads": 20,
+		"alt": "Alt 1",
+		"categories": ["Music", "Book", "Article"]
+	},
+	{
+		"title": "Image 1",
+		"url": "./img/3078b529-ba98-4f72-80e7-b31ab4aa6c29.jfif",
+		"favorite": 5,
+		"downloads": 20,
+		"alt": "Alt 1",
+		"categories": ["Music", "Book", "Article"]
+	},
+	{
+		"title": "Image 1",
+		"url": "./img/3078b529-ba98-4f72-80e7-b31ab4aa6c29.jfif",
+		"favorite": 5,
+		"downloads": 20,
+		"alt": "Alt 1",
+		"categories": ["Music", "Book", "Article"]
+	},
+	{
+		"title": "Image 1",
+		"url": "./img/3078b529-ba98-4f72-80e7-b31ab4aa6c29.jfif",
+		"favorite": 5,
+		"downloads": 20,
+		"alt": "Alt 1",
+		"categories": ["Music", "Book", "Article"]
+	},
+	{
+		"title": "Image 1",
+		"url": "./img/3078b529-ba98-4f72-80e7-b31ab4aa6c29.jfif",
+		"favorite": 5,
+		"downloads": 20,
+		"alt": "Alt 1",
+		"categories": ["Music", "Book", "Article"]
+	},
+	{
+		"title": "Image 1",
+		"url": "./img/3078b529-ba98-4f72-80e7-b31ab4aa6c29.jfif",
+		"favorite": 5,
+		"downloads": 20,
+		"alt": "Alt 1",
+		"categories": ["Music", "Book", "Article"]
+	}
+]
