@@ -36,8 +36,16 @@
 			}
 		}
 	}
-	.PG-topbar-gallery{
-		column-count: 4;
-		grid-gap: 20px;
+
+	.PG-masonry-gallery {
+		display: flex;
+		margin-left: -15px;
+		margin-right: -15px;
+		width: auto;
+		.PG-masonry-column {
+			padding-left: 15px;
+			padding-right: 15px;
+			background-clip: padding-box;
+		}
 	}
 }
