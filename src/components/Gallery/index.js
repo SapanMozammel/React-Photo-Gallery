@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import JsonData from "./../../data/images.json";
 const Gallery = () => {
     const [images, setImages] = useState([])
+    
     useEffect(() => {
         setImages(JsonData)
       }, []); // Only re-run the effect if count changes
