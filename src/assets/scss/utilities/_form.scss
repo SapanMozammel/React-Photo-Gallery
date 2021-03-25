@@ -1,0 +1,31 @@
+.search-input-control {
+	flex-grow: 1;
+	margin: 0 15px;
+	border-radius: 4px;
+	position: relative;
+	display: inline-flex;
+	background: $light;
+	.search-input {
+		flex-grow: 1;
+		background: $light;
+		height: 40px;
+		border-radius: 4px;
+		padding: 0 25px 0 45px;
+		color: $dark;
+		font-size: 16px;
+        display: inline-flex;
+		&::placeholder {
+			color: $secondary;
+		}
+	}
+	&:before {
+		content: '\e902';
+		font-family: 'wp-photo-gallery' !important;
+		position: absolute;
+		left: 14px;
+		top: 50%;
+		transform: translateY(-50%);
+		color: $secondary;
+		font-size: 20px;
+	}
+}

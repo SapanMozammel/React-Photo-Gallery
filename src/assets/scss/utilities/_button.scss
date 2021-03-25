@@ -1,0 +1,121 @@
+.pg-button {
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	&:not(.only-icon) {
+		min-height: 40px;
+		padding: 2px 16px;
+		font-size: 16px;
+		font-weight: 600;
+		.text {
+			&:not(:first-child) {
+				margin-left: 5px;
+			}
+			&:not(:last-child) {
+				margin-right: 5px;
+			}
+		}
+		.icon {
+			display: inline-flex;
+			&:not(:first-child) {
+				margin-left: 5px;
+			}
+			&:not(:last-child) {
+				margin-right: 5px;
+			}
+		}
+	}
+	&.only-icon {
+		height: 40px;
+		width: 40px;
+		font-size: 26px;
+		.icon {
+			display: inline-flex;
+		}
+	}
+	&:not(first-child) {
+		margin-left: 15px;
+	}
+	&:not(last-child) {
+		margin-right: 15px;
+	}
+}
+
+// Button design
+@mixin button-emphasis-variant($parent, $color) {
+	#{$parent} {
+		&:not(.only-icon) {
+			background: $color;
+			color: set-button-color($color);
+			border-color: $color;
+			@include transition;
+			@include transition-properties(
+				background,
+				color,
+				box-shadow,
+				border
+			);
+			&:disabled {
+				cursor: not-allowed;
+				background: $secondary;
+				border-color: $secondary;
+			}
+			.tly__icon {
+				color: $color;
+				background: set-button-color($color);
+			}
+		}
+		&.only-icon {
+			color: $color;
+		}
+	}
+	label#{$parent},
+	a#{$parent},
+	button#{$parent} {
+		&.tly__active,
+		&:hover {
+			&:not(.only-icon) {
+				&:disabled {
+					cursor: not-allowed;
+					background: $secondary;
+					box-shadow: none;
+					border-color: $secondary;
+				}
+				@if $color != #000000 {
+					background: darken($color,7%);
+					color: set-button-color($color);
+					border-color: darken($color,7%);
+					text-shadow: 0 1px 1px rgba(set-button-color($color), 0.3);
+					box-shadow: 0 15px 40px rgba($color, 0.15);
+				}
+				@if $color == $white {
+					background: darken($danger, 5%);
+					color: set-button-color($danger);
+					border-color: darken($danger, 5%);
+					text-shadow: 0 1px 1px rgba(set-button-color($danger), 0.3);
+					box-shadow: 0 15px 40px rgba($danger, 0.15);
+				}
+			}
+			&.only-icon {
+				&:disabled {
+					cursor: not-allowed;
+					color: $secondary;
+					box-shadow: none;
+				}
+				@if $color != #000000 {
+					color: darken($color, 7%);
+				}
+				@if $color == $white {
+					color: darken($danger, 7%);
+				}
+			}
+		}
+	}
+}
+
+// button color control
+@each $parent, $color in $theme-colors {
+	@include button-emphasis-variant('.pg-#{$parent}-button', $color);
+}
