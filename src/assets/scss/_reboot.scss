@@ -8,10 +8,17 @@ body {
 	border: none;
 	outline: none;
 	background: initial;
+	box-sizing: border-box;
 }
 img{
 	max-width: 100%;
 }
+.container-fluid {
+	width: 100%;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
 .container {
 	width: 85%;
 	margin-left: auto;

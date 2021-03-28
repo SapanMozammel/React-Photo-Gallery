@@ -7,7 +7,7 @@ export default function App() {
 	return (
 		<div className='PhotoGallery--wrapper'>
 			<TopBar />
-			<div className='container'>
+			<div className='container-fluid'>
 				<Categories />
 				<Gallery />
 				<Upload />

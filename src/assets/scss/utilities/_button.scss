@@ -35,10 +35,10 @@
 			display: inline-flex;
 		}
 	}
-	&:not(first-child) {
+	&:not(:first-child) {
 		margin-left: 15px;
 	}
-	&:not(last-child) {
+	&:not(:last-child) {
 		margin-right: 15px;
 	}
 }
