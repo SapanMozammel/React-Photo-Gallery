@@ -1,5 +1,5 @@
 import React from 'react';
-const GalleryItem = ({ img, index, onMyFavoriteClick }) => {
+const GalleryItem = ({ img, index, onMyFavoriteClick, onMyDownloadClick }) => {
 	return (
 		<div className='PG-masonry-item'>
 			<div className='PG-masonry-item-inner'>
@@ -25,7 +25,9 @@ const GalleryItem = ({ img, index, onMyFavoriteClick }) => {
 						<i className='pgicon pg-like'></i>
 						<span>{img.favorite}</span>
 					</button>
-					<button className='pg-masonry-item-download-count'>
+					<button
+						className='pg-masonry-item-download-count'
+						onClick={() => onMyDownloadClick(img)}>
 						<i className='pgicon pg-download'></i>
 						<span>{img.downloads}</span>
 					</button>

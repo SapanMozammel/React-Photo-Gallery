@@ -14,11 +14,13 @@ const Gallery = (selectedCategory) => {
 			selectedCategory.selectedCategory &&
 			selectedCategory.selectedCategory.item
 		) {
-			setImages([...mainImages.filter((image) =>
-				image.categories
-				.map(category => category.toLowerCase())
-				.includes(selectedCategory.selectedCategory.item)
-			)]);
+			setImages([
+				...mainImages.filter((image) =>
+					image.categories
+						.map((category) => category.toLowerCase())
+						.includes(selectedCategory.selectedCategory.item)
+				),
+			]);
 		}
 	}, [selectedCategory]);
 	const breakpointColumnsObj = {
@@ -29,7 +31,7 @@ const Gallery = (selectedCategory) => {
 	};
 
 	const handleMyFavoriteClick = (img) => {
-		let favorite = images.find((image) => image.id == img.id);
+		let favorite = images.find((image) => image.id === img.id);
 		if (favorite.isFav) {
 			favorite.favorite = img.favorite - 1;
 		} else {
@@ -37,6 +39,12 @@ const Gallery = (selectedCategory) => {
 		}
 		favorite.isFav = !favorite.isFav;
 		setImages([...images, favorite]);
+	};
+
+	const handleMyDownloadClick = (img) => {
+		let download = images.find((image) => image.id === img.id);
+		download.downloads = img.downloads + 1;
+		setImages([...images, download]);
 	};
 
 	return (
@@ -50,6 +58,7 @@ const Gallery = (selectedCategory) => {
 					index={index}
 					key={index}
 					onMyFavoriteClick={handleMyFavoriteClick}
+					onMyDownloadClick={handleMyDownloadClick}
 				/>
 			))}
 		</Masonry>
