@@ -1,12 +1,26 @@
 import React, { useEffect, useState } from 'react';
-import JsonData from './../../data/images.json';
 import Masonry from 'react-masonry-css';
+import JsonData from './../../data/images.json';
 import GalleryItem from './Gallery-item/Gallery-item';
-const Gallery = () => {
+const Gallery = (selectedCategory) => {
 	const [images, setImages] = useState([]);
+	const [mainImages, setMainImages] = useState([]);
 	useEffect(() => {
 		setImages(JsonData);
+		setMainImages(JsonData);
 	}, []);
+	useEffect(() => {
+		if (
+			selectedCategory.selectedCategory &&
+			selectedCategory.selectedCategory.item
+		) {
+			setImages([...mainImages.filter((image) =>
+				image.categories
+				.map(category => category.toLowerCase())
+				.includes(selectedCategory.selectedCategory.item)
+			)]);
+		}
+	}, [selectedCategory]);
 	const breakpointColumnsObj = {
 		default: 4,
 		1200: 3,
@@ -14,7 +28,16 @@ const Gallery = () => {
 		500: 1,
 	};
 
-	const myFavCount = 0;
+	const handleMyFavoriteClick = (img) => {
+		let favorite = images.find((image) => image.id == img.id);
+		if (favorite.isFav) {
+			favorite.favorite = img.favorite - 1;
+		} else {
+			favorite.favorite = img.favorite + 1;
+		}
+		favorite.isFav = !favorite.isFav;
+		setImages([...images, favorite]);
+	};
 
 	return (
 		<Masonry
@@ -22,7 +45,12 @@ const Gallery = () => {
 			className='PG-masonry-gallery'
 			columnClassName='PG-masonry-column'>
 			{images.map((img, index) => (
-				<GalleryItem img={img} index={index} myFavCount={myFavCount} />
+				<GalleryItem
+					img={img}
+					index={index}
+					key={index}
+					onMyFavoriteClick={handleMyFavoriteClick}
+				/>
 			))}
 		</Masonry>
 	);

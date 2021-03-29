@@ -3,7 +3,7 @@ import JsonData from './../../data/images.json';
 import Slider from 'react-slick';
 import SingleCategory from './SingleCategory/Single-category';
 
-const Categories = () => {
+const Categories = ({filterCategoryWise}) => {
 	const [images, setImages] = useState([]);
 	useEffect(() => {
 		setImages(JsonData);
@@ -65,7 +65,10 @@ const Categories = () => {
 		<div>
 			<Slider {...sliderSettings} className="category-slider">
 				{generateUniqueCategoryObject().sort( () => .5 - Math.random() ).map((category, index) => (
-					<SingleCategory category={category} index={index} />
+					<SingleCategory category={category} 
+					filterCategoryWise={filterCategoryWise}
+					index={index}
+					key={index} />
 				))}
 			</Slider>
 		</div>

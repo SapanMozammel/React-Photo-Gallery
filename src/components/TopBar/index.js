@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 
-const TopBar = () => {
+const TopBar = (images) => {
 	const hasLogo = false;
 	return (
 		<div className='pg-topbar'>
@@ -26,12 +26,12 @@ const TopBar = () => {
 					placeholder='Search here...'
 				/>
 			</div>
-			<button class='pg-button pg-love-button only-icon'>
+			<button className='pg-button pg-love-button only-icon'>
 				<span className='icon'>
 					<i className='pgicon pg-like'></i>
 				</span>
 			</button>
-			<button class='pg-button pg-success-button'>
+			<button className='pg-button pg-success-button'>
 				<span className='text'>Upload</span>{' '}
 				<span className='icon'>
 					<i className='pgicon pg-download'></i>
