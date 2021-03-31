@@ -17,10 +17,9 @@ export default function App() {
 					<TopBar />
 					<div className='container-fluid'>
 						<Route path='/Favorite'>
-							<h2>Favorite</h2>
 						</Route>
 						<Route path='/Upload'>
-							<h2>Upload</h2>
+							<Upload />
 						</Route>
 						<Route exact path='/'>
 							<Categories
