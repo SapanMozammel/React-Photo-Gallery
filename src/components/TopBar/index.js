@@ -2,11 +2,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const TopBar = (images) => {
+const TopBar = ({filterFavoriteWise, showAllItem}) => {
 	const hasLogo = false;
 	return (
 		<div className='pg-topbar'>
-			<Link to='/' className='pg-topbar-branding'>
+			<h4 className='pg-topbar-branding' 
+				onClick={() => showAllItem()}>
 				{hasLogo && (
 					<img
 						className='pg-topbar-logo'
@@ -15,11 +16,11 @@ const TopBar = (images) => {
 					/>
 				)}
 				{!hasLogo && (
-					<h3 className='pg-topbar-title'>
+					<span className='pg-topbar-title'>
 						WP <span>Photo</span> Gallery
-					</h3>
+					</span>
 				)}
-			</Link>
+			</h4>
 			<div className='search-input-control'>
 				<input
 					className='search-input'
@@ -27,11 +28,13 @@ const TopBar = (images) => {
 					placeholder='Search here...'
 				/>
 			</div>
-			<Link to='/Favorite' className='pg-button pg-love-button only-icon'>
+			<button
+				onClick={() => filterFavoriteWise()}
+				className='pg-button pg-love-button only-icon'>
 				<span className='icon'>
 					<i className='pgicon pg-like'></i>
 				</span>
-			</Link>
+			</button>
 			<Link to='/Upload' className='pg-button pg-success-button'>
 				<span className='text'>Upload</span>{' '}
 				<span className='icon'>
