@@ -1,26 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-const GalleryItem = ({ img, index, onMyFavoriteClick, onMyDownloadClick }) => {
+const GalleryItem = ({ img, index, onMyFavoriteClick, onMyDownloadClick, showItemDetails }) => {
 	return (
 		<div className='PG-masonry-item'>
 			<div className='PG-masonry-item-inner'>
-				<Link to={`/${img.title}`}>
+				<Link to="/single-item" onClick={showItemDetails(img, index)}>
 					<img src={img.url} alt={img.alt} key={index} />
 				</Link>
 				<div className='overlay'>
-					<Link
-						to={`/${img.author}`}
-						className='pg-masonry-item-author'>
+					<h5 className='pg-masonry-item-author'>
 						<span>by</span>
 						{img.author}
-					</Link>
+					</h5>
 					<button className='pg-button only-icon pg-primary-button'>
 						<i className='pgicon pg-download'></i>
 					</button>
 				</div>
 			</div>
 			<div className='PG-masonry-item-outer'>
-				<Link to={`/${img.title}`} className='PG-masonry-item-title'>
+				<Link to="/single-item" className='PG-masonry-item-title'>
 					{img.title}
 				</Link>
 				<div className='PG-masonry-item-outer-overflow'>
