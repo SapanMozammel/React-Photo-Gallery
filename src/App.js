@@ -3,7 +3,7 @@ import Categories from './components/Categories';
 import Gallery from './components/Gallery';
 import TopBar from './components/TopBar';
 import Upload from './components/Upload';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 export default function App() {
 	const [selectedCategory, setSelectedCategory] = useState(null);
@@ -22,12 +22,11 @@ export default function App() {
 						<Route path='/Upload'>
 							<h2>Upload</h2>
 						</Route>
-						<Route path='/'>
+						<Route exact path='/'>
 							<Categories
 								filterCategoryWise={filterCategoryWise}
 							/>
 							<Gallery selectedCategory={selectedCategory} />
-							<Upload />
 						</Route>
 					</div>
 				</div>
