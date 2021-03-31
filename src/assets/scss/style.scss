@@ -198,3 +198,47 @@
 		}
 	}
 }
+
+
+// Upload css
+.pg-upload-wrap {
+    height: calc(100vh - 100px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pg-upload-label {
+    width: 200px;
+    border: 2px dashed grey;
+    border-radius: 5px;
+    display: block;
+    padding: 30px;
+    transition: border 300ms ease;
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
+}
+.pg-upload-label i {
+    display: block;
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+.pg-upload-label i,
+.pg-upload-label .pg-upload-title {
+  color: grey;
+  transition: 200ms color;
+}
+.pg-upload-label:hover {
+  border-color: #60ce83;
+}
+.pg-upload-label:hover i,
+.pg-upload-label:hover .pg-upload-title {
+  color: #60ce83;
+}
+.pg-upload-input{
+    display:none;
+}
+.pg-button.pg-upload-button {
+    margin: 20px 0 0;
+}

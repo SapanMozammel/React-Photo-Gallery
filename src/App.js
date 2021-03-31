@@ -12,8 +12,8 @@ export default function App() {
 		<div className='PhotoGallery--wrapper'>
 			<TopBar />
 			<div className='container-fluid'>
-				<Categories filterCategoryWise={filterCategoryWise} />
-				<Gallery selectedCategory = {selectedCategory} />
+				{/* <Categories filterCategoryWise={filterCategoryWise} /> */}
+				{/* <Gallery selectedCategory = {selectedCategory} /> */}
 				<Upload />
 			</div>
 		</div>
