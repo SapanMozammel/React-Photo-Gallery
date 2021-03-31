@@ -1,4 +1,19 @@
 
 .singleItem {
     padding: 100px 0;
+    display: flex;
+    .item__thumb {
+        flex: 0 0 50%;
+    }
+    .item__info__wrap {
+        flex: 0 0 50%;
+        padding-left: 50px;
+        h2 {
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
 }
