@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Masonry from 'react-masonry-css';
 import JsonData from './../../data/images.json';
 import GalleryItem from './Gallery-item/Gallery-item';
-const Gallery = (selectedCategory) => {
+const Gallery = ({selectedCategory, allFavorite, allItem}) => {
 	const [images, setImages] = useState([]);
 	const [mainImages, setMainImages] = useState([]);
 	useEffect(() => {
@@ -11,18 +11,38 @@ const Gallery = (selectedCategory) => {
 	}, []);
 	useEffect(() => {
 		if (
-			selectedCategory.selectedCategory &&
-			selectedCategory.selectedCategory.item
+			selectedCategory &&
+			selectedCategory.item
 		) {
 			setImages([
 				...mainImages.filter((image) =>
 					image.categories
 						.map((category) => category.toLowerCase())
-						.includes(selectedCategory.selectedCategory.item)
+						.includes(selectedCategory.item)
 				),
 			]);
 		}
 	}, [selectedCategory]);
+	useEffect(() => {
+		if (
+			allFavorite 
+		) {
+			setImages([
+				...mainImages.filter((image) =>
+					image.isFav
+				),
+			]);
+		}
+	}, [allFavorite]);
+	useEffect(() => {
+		if (
+			allItem 
+		) {
+			setImages([
+				...mainImages
+			]);
+		}
+	}, [allItem]);
 	const breakpointColumnsObj = {
 		default: 4,
 		1200: 3,

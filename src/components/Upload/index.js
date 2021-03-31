@@ -5,12 +5,12 @@ const Upload = () => {
 		<div className="pg-upload-wrap">
 			<form className="pg-upload-form">
 
-			<label class="pg-upload-label">
-				<i class="pgicon pg-upload"></i>
-				<span class="pg-upload-title">
+			<label className="pg-upload-label">
+				<i className="pgicon pg-upload"></i>
+				<span className="pg-upload-title">
 					Add File
 				</span>
-				<input class="pg-upload-input" type="file"/>
+				<input className="pg-upload-input" type="file"/>
 			</label>
 			<button type="submit" className="pg-button pg-upload-button pg-success-button">Upload</button>
 			</form>
