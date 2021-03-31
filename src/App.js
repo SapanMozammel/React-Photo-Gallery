@@ -13,23 +13,24 @@ export default function App() {
 	return (
 		<Router>
 			<Switch>
-				<Route path='/Favorite'>
-					<h2>Favorite</h2>
-				</Route>
-				<Route path='/Upload'>
-					<h2>Upload</h2></Route>
-				<Route path='/'>
-					<div className='PhotoGallery--wrapper'>
-						<TopBar />
-						<div className='container-fluid'>
+				<div className='PhotoGallery--wrapper'>
+					<TopBar />
+					<div className='container-fluid'>
+						<Route path='/Favorite'>
+							<h2>Favorite</h2>
+						</Route>
+						<Route path='/Upload'>
+							<h2>Upload</h2>
+						</Route>
+						<Route path='/'>
 							<Categories
 								filterCategoryWise={filterCategoryWise}
 							/>
 							<Gallery selectedCategory={selectedCategory} />
 							<Upload />
-						</div>
+						</Route>
 					</div>
-				</Route>
+				</div>
 			</Switch>
 		</Router>
 	);

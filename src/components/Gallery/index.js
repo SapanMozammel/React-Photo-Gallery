@@ -30,7 +30,7 @@ const Gallery = (selectedCategory) => {
 		500: 1,
 	};
 
-	const handleMyFavoriteClick = (img) => {
+	const handleMyFavoriteClick = (img, index) => {
 		let favorite = images.find((image) => image.id === img.id);
 		if (favorite.isFav) {
 			favorite.favorite = img.favorite - 1;
@@ -38,13 +38,15 @@ const Gallery = (selectedCategory) => {
 			favorite.favorite = img.favorite + 1;
 		}
 		favorite.isFav = !favorite.isFav;
-		setImages([...images, favorite]);
+		images[index] = favorite;
+		setImages([...images]);
 	};
 
-	const handleMyDownloadClick = (img) => {
+	const handleMyDownloadClick = (img, index) => {
 		let download = images.find((image) => image.id === img.id);
 		download.downloads = img.downloads + 1;
-		setImages([...images, download]);
+		images[index] = download;
+		setImages([...images]);
 	};
 
 	return (

@@ -31,13 +31,13 @@ const GalleryItem = ({ img, index, onMyFavoriteClick, onMyDownloadClick }) => {
 							className={`pg-masonry-item-favorite-count ${
 								img.isFav ? 'my-fav' : ''
 							}`}
-							onClick={() => onMyFavoriteClick(img)}>
+							onClick={() => onMyFavoriteClick(img, index)}>
 							<i className='pgicon pg-like'></i>
 							<span>{img.favorite}</span>
 						</button>
 						<button
 							className='pg-masonry-item-download-count'
-							onClick={() => onMyDownloadClick(img)}>
+							onClick={() => onMyDownloadClick(img, index)}>
 							<i className='pgicon pg-download'></i>
 							<span>{img.downloads}</span>
 						</button>
