@@ -13,12 +13,12 @@ export default function App() {
 	};
 	const [allFavorite, setAllFavorite] = useState(false);
 	const filterFavoriteWise = () => {
-		setAllItem(false);
+		setAllItem(false); // to change state
 		setAllFavorite(true);
 	};
 	const [allItem, setAllItem] = useState(0);
 	const showAllItem = () => {
-		setAllFavorite(false);
+		setAllFavorite(false); // to change state
 		setAllItem(true);
 	};
 	return (
