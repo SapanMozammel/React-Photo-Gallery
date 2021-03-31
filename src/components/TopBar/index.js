@@ -29,7 +29,7 @@ const TopBar = ({filterFavoriteWise, showAllItem}) => {
 				/>
 			</div>
 			<button
-				onClick={() => filterFavoriteWise()}
+				onClick={filterFavoriteWise}
 				className='pg-button pg-love-button only-icon'>
 				<span className='icon'>
 					<i className='pgicon pg-like'></i>
