@@ -1,66 +1,278 @@
 [
-	{
-		"title": "Image 1",
+	{	
+		"id": 0,
+		"title": "Brown Musical Article Banner",
 		"url": "./img/3078b529-ba98-4f72-80e7-b31ab4aa6c29.jfif",
+		"author": "Rojab Khan",
 		"favorite": 5,
 		"downloads": 20,
-		"alt": "Alt 1",
-		"categories": ["Music", "Book", "Article"]
+		"alt": "Brown Music Article Banner",
+		"categories": ["Music", "Book", "article"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
 	},
-	{
-		"title": "Image 1",
-		"url": "./img/3078b529-ba98-4f72-80e7-b31ab4aa6c29.jfif",
-		"favorite": 5,
-		"downloads": 20,
-		"alt": "Alt 1",
-		"categories": ["Music", "Book", "Article"]
+	{	
+		"id": 1,
+		"title": "Girl in the mountain visiting spot",
+		"url": "./img/alexander-mils-instagram-com-alexandermils-187888-unsplash.jpg",
+		"author": "Sapan Mozammel",
+		"favorite": 6,
+		"downloads": 18,
+		"alt": "Girl in the mountain visiting spot",
+		"categories": ["Modeling", "Nature", "Fashion", "Adventure"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
 	},
-	{
-		"title": "Image 1",
-		"url": "./img/3078b529-ba98-4f72-80e7-b31ab4aa6c29.jfif",
-		"favorite": 5,
-		"downloads": 20,
-		"alt": "Alt 1",
-		"categories": ["Music", "Book", "Article"]
+	{	
+		"id": 2,
+		"title": "Black High Heels in the White Carpet",
+		"url": "./img/allyson-johnson-73023-unsplash.jpg",
+		"author": "Mehedi Hassan Sisir",
+		"favorite":4,
+		"downloads": 14,
+		"alt": "Black High Heels in the White Carpet",
+		"categories": ["Branding", "Photography"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
 	},
-	{
-		"title": "Image 1",
-		"url": "./img/3078b529-ba98-4f72-80e7-b31ab4aa6c29.jfif",
-		"favorite": 5,
-		"downloads": 20,
-		"alt": "Alt 1",
-		"categories": ["Music", "Book", "Article"]
+	{	
+		"id": 3,
+		"title": "White Notebook on the table with glass",
+		"url": "./img/antique-blank-camera-269810.jpg",
+		"author": "Kazi Imam Mehedi",
+		"favorite": 12,
+		"downloads": 43,
+		"alt": "White Notebook on the table with glass",
+		"categories": ["Reading", "Writing", "Photography", "Sunglass", "Notebook"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
 	},
-	{
-		"title": "Image 1",
-		"url": "./img/3078b529-ba98-4f72-80e7-b31ab4aa6c29.jfif",
-		"favorite": 5,
-		"downloads": 20,
-		"alt": "Alt 1",
-		"categories": ["Music", "Book", "Article"]
+	{	
+		"id": 4,
+		"title": "Hotel Room Decoration with Tidy up Bed and Television",
+		"url": "./img/apartment-architecture-bed-271668.jpg",
+		"author": "Mahfuzur Rahman",
+		"favorite": 7,
+		"downloads": 42,
+		"alt": "Hotel Room Decoration with Tidy up Bed and Television",
+		"categories": ["Apartment", "Hotel", "Television"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
 	},
-	{
-		"title": "Image 1",
-		"url": "./img/3078b529-ba98-4f72-80e7-b31ab4aa6c29.jfif",
-		"favorite": 5,
-		"downloads": 20,
-		"alt": "Alt 1",
-		"categories": ["Music", "Book", "Article"]
+	{	
+		"id": 5,
+		"title": "Boy walking wearing t-shirt",
+		"url": "./img/creaslim-492524-unsplash.jpg",
+		"author": "Jamil BD",
+		"favorite": 21,
+		"downloads": 56,
+		"alt": "Boy walking wearing t-shirt",
+		"categories": ["Modeling", "T-shirt", "Pants"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
 	},
-	{
-		"title": "Image 1",
-		"url": "./img/3078b529-ba98-4f72-80e7-b31ab4aa6c29.jfif",
-		"favorite": 5,
-		"downloads": 20,
-		"alt": "Alt 1",
-		"categories": ["Music", "Book", "Article"]
+	{	
+		"id": 6,
+		"title": "Boy wearing shoes",
+		"url": "./img/eliud-gil-samaniego-68734-unsplash.jpg",
+		"author": "Shaikat Vai",
+		"favorite": 16,
+		"downloads": 54,
+		"alt": "Boy wearing shoes",
+		"categories": ["Modeling", "Marketing", "Shoes" ],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
 	},
-	{
-		"title": "Image 1",
-		"url": "./img/3078b529-ba98-4f72-80e7-b31ab4aa6c29.jfif",
+	{	
+		"id": 7,
+		"title": "Girl cheering with music",
+		"url": "./img/john-price-27868-unsplash.jpg",
+		"author": "Sapan Mozammel",
+		"favorite": 7,
+		"downloads": 86,
+		"alt": "Girl cheering with music",
+		"categories": ["Music", "Cheering"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
+	},
+	{	
+		"id": 8,
+		"title": "Graphical Lion",
+		"url": "./img/lion-5120x2880-art-5k-14972.jpg",
+		"author": "Rojab Khan",
+		"favorite": 32,
+		"downloads": 192,
+		"alt": "Graphical Lion",
+		"categories": ["Graphics", "Art"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
+	},
+	{	
+		"id": 9,
+		"title": "Headphone with Music",
+		"url": "./img/mike-cyr-532643-unsplash.jpg",
+		"author": "Shaikat Vai",
+		"favorite": 23,
+		"downloads": 66,
+		"alt": "Headphone with Music",
+		"categories": ["Music", "Brand", "Photography"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
+	},
+	{	
+		"id": 10,
+		"title": "Man with sunclass",
+		"url": "./img/oscar-sutton-452242-unsplash.jpg",
+		"author": "Kazi Imam Mehedi",
+		"favorite": 21,
+		"downloads": 354,
+		"alt": "Man with sunclass",
+		"categories": ["Modeling", "Sunglass", "Modeling"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
+	},
+	{	
+		"id": 11,
+		"title": "pete-bellis-427162-unsplash.jpg",
+		"url": "./img/pete-bellis-427162-unsplash.jpg",
+		"author": "Mahfuzur Rahman",
+		"favorite": 13,
+		"downloads": 43,
+		"alt": "pete-bellis-427162-unsplash.jpg",
+		"categories": ["Modeling", "Nature", "Fashion"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
+	},
+	{	
+		"id": 12,
+		"title": "Man working with macbook",
+		"url": "./img/pexels-photo-196655.jpeg",
+		"author": "Sapan Mozammel",
 		"favorite": 5,
 		"downloads": 20,
-		"alt": "Alt 1",
-		"categories": ["Music", "Book", "Article"]
+		"alt": "pexels-photo-196655.jpeg",
+		"categories": ["Work", "Brand", "Article"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
+	},
+	{	
+		"id": 13,
+		"title": "pexels-photo-259100.jpeg",
+		"url": "./img/pexels-photo-259100.jpeg",
+		"author": "Rojab Khan",
+		"favorite": 55,
+		"downloads": 654,
+		"alt": "pexels-photo-259100.jpeg",
+		"categories": ["Money", "Photography"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
+	},
+	{	
+		"id": 14,
+		"title": "Man working with macbook",
+		"url": "./img/pexels-photo-288477.jpeg",
+		"author": "Shaikat Vai",
+		"favorite": 9,
+		"downloads": 76,
+		"alt": "pexels-photo-288477.jpeg",
+		"categories": ["Work", "Brand", "Article"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
+	},
+	{	
+		"id": 15,
+		"title": "Women working with macbook",
+		"url": "./img/pexels-photo-296878.jpeg",
+		"author": "Mehedi Hassan Sisir",
+		"favorite": 65,
+		"downloads": 899,
+		"alt": "pexels-photo-296878.jpeg",
+		"categories": ["Work", "Brand", "Article"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
+	},
+	{	
+		"id": 16,
+		"title": "Gold Bar",
+		"url": "./img/pexels-photo-342945.jpeg",
+		"author": "Sapan Mozammel",
+		"favorite": 5,
+		"downloads": 20,
+		"alt": "Gold Bar",
+		"categories": ["Photography", "Gold"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
+	},
+	{	
+		"id": 17,
+		"title": "pexels-photo-417395.jpeg",
+		"url": "./img/pexels-photo-417395.jpeg",
+		"author": "Mehedi Hassan Sisir",
+		"favorite": 44,
+		"downloads": 332,
+		"alt": "pexels-photo-417395.jpeg",
+		"categories": ["Money", "Photography"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
+	},
+	{	
+		"id": 18,
+		"title": "Man working with macbook",
+		"url": "./img/pexels-photo-450271.jpeg",
+		"author": "Mahfuzur Rahman",
+		"favorite": 77,
+		"downloads": 865,
+		"alt": "pexels-photo-450271.jpeg",
+		"categories": ["Work", "Brand", "Article"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
+	},
+	{	
+		"id": 19,
+		"title": "Working Desk",
+		"url": "./img/pexels-photo-459654.jpeg",
+		"author": "Jamil BD",
+		"favorite": 5,
+		"downloads": 30,
+		"alt": "pexels-photo-450271.jpeg",
+		"categories": ["Work", "Brand", "Article"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
+	},
+	{	
+		"id":20,
+		"title": "Man Cheel with Mountain view",
+		"url": "./img/phonepicutres-TA.jpg",
+		"author": "Rojab Khan",
+		"favorite": 7,
+		"downloads": 20,
+		"alt": "Man Cheel with Mountain view",
+		"categories": ["Adventure", "Nature"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
+	},
+	{	
+		"id": 21,
+		"title": "Singer Singing Song",
+		"url": "./img/singer-690117_1920.jpg",
+		"author": "Shaikat Vai",
+		"favorite": 25,
+		"downloads": 280,
+		"alt": "Singer Singing song",
+		"categories": ["Music", "Cheering"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
+	},
+	{	
+		"id": 22,
+		"title": "Boy stand in a fashion look",
+		"url": "./img/tobias-van-schneider-310424-unsplash.jpg",
+		"author": "Sapan Mozammel",
+		"favorite": 34,
+		"downloads": 205,
+		"alt": "Boy stand in a fashion look",
+		"categories": ["Modeling", "T-shirt"],
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at nulla, fugiat delectus, vel dolorem explicabo dicta quod consequuntur doloribus animi dolore eligendi tempora. Ea magni dolorum id eveniet enim?",
+		"isFav": false
 	}
 ]

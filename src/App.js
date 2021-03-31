@@ -1,17 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Categories from './components/Categories';
 import Gallery from './components/Gallery';
 import TopBar from './components/TopBar';
 import Upload from './components/Upload';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 export default function App() {
+	const [selectedCategory, setSelectedCategory] = useState(null);
+	const filterCategoryWise = (category) => {
+		setSelectedCategory(category);
+	};
 	return (
-		<div className='PhotoGallery--wrapper'>
-			<TopBar />
-			<div className='container'>
-				<Categories />
-				<Gallery />
-				<Upload />
-			</div>
-		</div>
+		<Router>
+			<Switch>
+				<div className='PhotoGallery--wrapper'>
+					<TopBar />
+					<div className='container-fluid'>
+						<Route path='/Favorite'>
+						</Route>
+						<Route path='/Upload'>
+							<Upload />
+						</Route>
+						<Route exact path='/'>
+							<Categories
+								filterCategoryWise={filterCategoryWise}
+							/>
+							<Gallery selectedCategory={selectedCategory} />
+						</Route>
+					</div>
+				</div>
+			</Switch>
+		</Router>
 	);
 }

@@ -1,18 +1,70 @@
 import React, { useEffect, useState } from 'react';
-import JsonData from "./../../data/images.json";
-const Gallery = () => {
-    const [images, setImages] = useState([])
-    useEffect(() => {
-        setImages(JsonData)
-      }, []); // Only re-run the effect if count changes
-    
-    return (
-        <div className="PG-topbar-gallery">
-            {images.map( (img, index) => (
-                <img src={img.url} alt={`Images ${index}`} key={index} />
-            ))}
-        </div>
-    )
-}
+import Masonry from 'react-masonry-css';
+import JsonData from './../../data/images.json';
+import GalleryItem from './Gallery-item/Gallery-item';
+const Gallery = (selectedCategory) => {
+	const [images, setImages] = useState([]);
+	const [mainImages, setMainImages] = useState([]);
+	useEffect(() => {
+		setImages(JsonData);
+		setMainImages(JsonData);
+	}, []);
+	useEffect(() => {
+		if (
+			selectedCategory.selectedCategory &&
+			selectedCategory.selectedCategory.item
+		) {
+			setImages([
+				...mainImages.filter((image) =>
+					image.categories
+						.map((category) => category.toLowerCase())
+						.includes(selectedCategory.selectedCategory.item)
+				),
+			]);
+		}
+	}, [selectedCategory]);
+	const breakpointColumnsObj = {
+		default: 4,
+		1200: 3,
+		700: 2,
+		500: 1,
+	};
+
+	const handleMyFavoriteClick = (img, index) => {
+		let favorite = images.find((image) => image.id === img.id);
+		if (favorite.isFav) {
+			favorite.favorite = img.favorite - 1;
+		} else {
+			favorite.favorite = img.favorite + 1;
+		}
+		favorite.isFav = !favorite.isFav;
+		images[index] = favorite;
+		setImages([...images]);
+	};
+
+	const handleMyDownloadClick = (img, index) => {
+		let download = images.find((image) => image.id === img.id);
+		download.downloads = img.downloads + 1;
+		images[index] = download;
+		setImages([...images]);
+	};
+
+	return (
+		<Masonry
+			breakpointCols={breakpointColumnsObj}
+			className='PG-masonry-gallery'
+			columnClassName='PG-masonry-column'>
+			{images.map((img, index) => (
+				<GalleryItem
+					img={img}
+					index={index}
+					key={index}
+					onMyFavoriteClick={handleMyFavoriteClick}
+					onMyDownloadClick={handleMyDownloadClick}
+				/>
+			))}
+		</Masonry>
+	);
+};
 
 export default Gallery;
