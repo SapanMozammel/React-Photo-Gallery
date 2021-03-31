@@ -11,23 +11,25 @@ export default function App() {
 	const filterCategoryWise = (category) => {
 		setSelectedCategory(category);
 	};
-	const [allFavorite, setAllFavorite] = useState(0);
+	const [allFavorite, setAllFavorite] = useState(false);
 	const filterFavoriteWise = () => {
+		setAllItem(false);
 		setAllFavorite(true);
 	};
 	const [allItem, setAllItem] = useState(0);
 	const showAllItem = () => {
+		setAllFavorite(false);
 		setAllItem(true);
 	};
 	return (
 		<Router>
-			<Switch>
-				<div className='PhotoGallery--wrapper'>
-					<TopBar
-						filterFavoriteWise={filterFavoriteWise}
-						showAllItem={showAllItem}
-					/>
-					<div className='container-fluid'>
+			<div className='PhotoGallery--wrapper'>
+				<TopBar
+					filterFavoriteWise={filterFavoriteWise}
+					showAllItem={showAllItem}
+				/>
+				<div className='container-fluid'>
+					<Switch>
 						<Route path='/single-item' >
 							<SingleItem />
 						</Route>
@@ -44,9 +46,9 @@ export default function App() {
 								allItem={allItem}
 							/>
 						</Route>
-					</div>
+					</Switch>
 				</div>
-			</Switch>
+			</div>
 		</Router>
 	);
 }
